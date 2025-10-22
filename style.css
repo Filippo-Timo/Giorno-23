@@ -19,24 +19,28 @@ ul {
 }
 
 li {
-  text-align: center;
   width: 180px;
   height: 90px;
   background-color: rgb(255, 223, 127);
   border: 1px solid rgb(255, 223, 127);
   border-radius: 50px;
-  margin-bottom: 1em;
+  margin: 0.5em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.firstButton {
+#firstButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .firstButton a {
   display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
 a {
+  display: flex;
   text-decoration: none;
   color: rgb(45, 50, 100);
   align-items: center;
@@ -49,10 +53,11 @@ a {
 }
 
 main {
-  width: 80%;
+  width: auto;
   background-color: rgb(255, 255, 255);
 }
 
 .card {
   display: flex;
+  flex-direction: column;
 }

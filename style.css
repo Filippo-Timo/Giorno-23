@@ -1,11 +1,12 @@
 body {
   display: flex;
   flex-direction: row;
-  align-items: stretch;
+  color: rgb(117, 35, 6);
 }
 
 header {
-  width: auto;
+  width: fit-content;
+  font-size: larger;
   background-color: rgb(254, 247, 226);
   display: flex;
   flex-direction: column;
@@ -28,6 +29,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: rgb(117, 35, 6);
 }
 
 #firstButton {
@@ -42,7 +44,7 @@ li {
 a {
   display: flex;
   text-decoration: none;
-  color: rgb(45, 50, 100);
+  color: rgb(117, 35, 6);
   align-items: center;
 }
 
@@ -52,12 +54,57 @@ a {
   margin-right: 0.25em;
 }
 
+/* QUI INIZIA IL MAIN */
+
 main {
   width: auto;
   background-color: rgb(255, 255, 255);
+  padding: 1em;
+}
+
+#cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .card {
+  width: 250px;
   display: flex;
   flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  background-color: rgb(254, 247, 226);
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+#card-p-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 1em;
+}
+
+#card-p-container span {
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+div > p {
+  margin-top: 0;
+}
+
+div > button {
+  width: 60%;
+  height: 30px;
+  border-radius: 15px;
+  margin-bottom: 1em;
+  background-color: rgb(255, 223, 127);
+  border: 1px solid rgb(255, 223, 127);
 }
